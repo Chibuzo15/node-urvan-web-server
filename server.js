@@ -4,7 +4,7 @@ const fs = require('fs');
 
 var app = express();
 
-const port = 3000
+const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs')
@@ -66,4 +66,4 @@ app.get('/maintenance', (req, res) => {
 })
 
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Example app listening at port ${port}`))
