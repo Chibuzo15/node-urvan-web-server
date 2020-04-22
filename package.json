@@ -9,6 +9,6 @@
     "license": "ISC",
     "dependencies": {
         "express":"4.17.1",
-        "libs": "^4.0.0"
+        "hbs": "^4.0.0"
     }
 }
